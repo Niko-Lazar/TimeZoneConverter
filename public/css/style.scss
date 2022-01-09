@@ -1,0 +1,22 @@
+//***** MAIN *****//
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+// font family
+$font-roboto: 'Roboto', sans-serif;
+
+
+// colors 
+$background: rgb(131, 127, 216);
+$text: #007EE5;
+$light_text: #72B6EC;
+$primary: rgb(56, 56, 56);
+$secondary: rgb(118, 118, 118);
+
+// imports
+@import './responsive';
+@import './layout';
+@import './components';
+@import './clock';
+@import './create-event';
+@import './_event-page';
+@import './_time-calculator';

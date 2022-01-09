@@ -1,0 +1,145 @@
+// Page layout and more
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $background;
+}
+
+.center_box{
+    width: 900px;
+    height: 500px;
+    border-radius: 100px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $primary;
+    z-index: 100;
+    opacity: 0.9;
+
+    .title_box{
+        h2{
+            font-weight: bold;
+            color: $text;
+            font-size: 1.5rem;
+        }
+    }
+
+    .converter_box {
+        display: flex;
+        flex-direction: row;
+        
+            display: flex;
+            input, select, option{
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: $text;
+                height: 40px;
+                border-radius: 4px;
+                border: 1px solid $light_text;
+                margin: 0px .5rem .5rem .5rem;
+                padding: 7px;
+                overflow: hidden;
+                background-color: $primary;
+
+                &:focus{
+                    outline: none;
+                }
+            }
+
+            .left_box{
+                margin-right: 0px;
+                border-right: 2px solid $text;
+                border-radius: 10px;
+                border-end-end-radius: 0px;
+                border-top-right-radius: 0px;
+
+                .current_zone_info{
+                    display: flex;
+                    color: $light_text;
+                    font-size: 0.7rem;
+                    margin: 0px .5rem .5rem .6rem;
+
+                    #current_zone{
+                        margin-left: 5px;
+                        color: $text;
+                    }
+                }
+            }
+    
+            .right_box{
+                border-left: 2px solid $text;
+                border-radius: 10px;
+                border-top-left-radius: 0px;
+                border-bottom-left-radius: 0px;
+                
+                
+                
+            }
+            
+            .left_box, .right_box{
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                &.control_box ul{
+                    display: flex;
+                }
+
+                .control_box ul{
+                    display: flex;
+                    justify-content: center;
+                    list-style: none;
+                    
+                    li{
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .label_text{
+                    color: $light_text;
+                    font-size: 0.7rem;
+                    margin: 0px .5rem .5rem .6rem;
+                }
+            }
+    }
+}
+
+footer {
+    z-index: 100;
+    .footer_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vh;
+        height: 5vh;
+        border-radius: 20px;
+        background-color: $primary;
+
+        ul.footer_list{
+            display: flex;
+            li {
+                list-style: none;
+                margin: 1rem;
+                a{
+                    text-decoration: none;
+                    color: $text;
+                    text-transform: uppercase;
+                    &:hover {
+                        cursor: pointer;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+

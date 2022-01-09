@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="event_title">
+                    <h2>Create Event</h2>
+                    <p>Share with others</p>
+                </div>
+            </div>
+            <form action="/create-event-form" method="POST" class="col-6">
+                <div class="event_date">
+                    <label for="startTime">Starts at:</label>
+                    <input type="text" name="startTime" value="" id="event_starttime">
+                    <label for="endTime">Ends at:</label>
+                    <input type="text" name="endTime" value="" id="event_endtime">
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="event_date">
+                </div>
+                <div class="details">
+                    <div class="event_details">
+                        <label for="title">Title:</label>
+                        <input type="text" name="title" value="" id="event_title">
+                        <label for="location">Location:</label>
+                        <input type="text" name="location" value="" id="event_title">
+                        <label for="eventURL">Event URL:</label>
+                        <input type="text" name="eventURL" value="" id="event_url">
+                        <label for="desc">Description:</label>
+                        <textarea id="event_desc" name="desc" id="desc" cols="30" rows="20"></textarea>
+                    </div>
+                    <div class="custom_colors">
+                        <label for="">Custom colors:</label>
+                        <div class="event_colors">
+                            <span>Text:<input type="color" name="eventTextColor" id="event_text_color"></span>
+                            <span>Link:<input type="color" name="eventLinkColor" id="event_link_color"></span>
+                            <span>Background:<input type="color" name="eventBgColor" id="event_bg_color"></span>
+                        </div>
+                    </div>
+                    <button type="submit">Create</button>
+                </div>
+            </form>
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer_box">
+                                <ul class="footer_list">
+                                    <li>
+                                        <a href="">about</a>
+                                    </li>
+                                    <li>
+                                        <a href="/">Time Zone Converter</a>
+                                    </li>
+                                    <li>
+                                        <a href="/time-calculator-between">Time calculator</a>
+                                    </li>
+                                    <li>
+                                        <a href="/create-event">Create Event</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "time-zone-converter",
+  "version": "1.0.0",
+  "description": "Time Zone Converter Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Lazar Nikolic",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1"
+  }
+}

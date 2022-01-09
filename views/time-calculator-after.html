@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+</head>
+<body> 
+    <div class="time_calc_page">
+        <div class="time_calc_container">
+            <div class="time_calc_title">
+                <h2>Time calculator</h2>
+                <div class="time_buttons_select">
+                    <a href="/time-calculator-between">Time Between</a>
+                    <a href="/time-calculator-after" id="active_btn">Time After</a>
+                </div>
+                <div class="time_input_box">
+                    <div>
+                        <label for="time_calc_start">Time:</label>
+                        <input type="text" name="time_calc_start" id="time_calc_start" placeholder="30 minutes">
+                    </div>
+                    <div id="time_calc_box" onclick="calculateAfter()">
+                        <img id="time_calc_btn" src="/images/clock-solid.svg" alt=""/>
+                        <span>Calculate</span>
+                    </div>
+                    <div>
+                        <label for="time_calc_end">After:</label>
+                        <input type="text" name="time_calc_end" id="time_calc_end" placeholder="10:00">
+                    </div>
+                </div>
+                <div class="time_calc_result_box">
+                    <p id="time_calc_rez">
+                        10:30
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="footer_box">
+                            <ul class="footer_list">
+                                <li>
+                                    <a href="">about</a>
+                                </li>
+                                <li>
+                                    <a href="/">Time Zone Converter</a>
+                                </li>
+                                <li>
+                                    <a href="/time-calculator-between">Time calculator</a>
+                                </li>
+                                <li>
+                                    <a href="/create-event">Create Event</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/moment.js"></script>
+    <script src="/js/time-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+.time_calc_page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .time_calc_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        .time_calc_title{
+            
+            h2{
+                text-align: center;
+                color: $text;
+                font-size: 4rem;
+            }
+    
+            .time_buttons_select{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $light_text;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    text-align: center;
+                    width: 50%;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                    color: $text;
+                    height: 40px;
+                    border-radius: 4px;
+                    border: none;
+                    margin: .5rem;
+                    padding: 7px;
+                    background-color: transparent;
+                    animation-duration: .4s;
+                    text-decoration: none;
+    
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                #active_btn{
+                    background-color: $text;
+                    color: white;
+                }
+            }
+        }
+
+        .time_input_box{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+
+            #time_calc_box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                #time_calc_btn{
+                    width: 40px;
+                    height: 40px;
+                    background-color: white;
+                    border-radius: 20px;
+                    margin-top: 1rem;
+                    margin-bottom: 5px;
+                }
+                &:hover{
+                    color: $text;
+                }
+                
+            }
+            
+
+            div {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                
+                label{
+                    margin-left: .5rem;
+                    margin-bottom: 3px;
+                }
+            }
+
+            input {
+                font-weight: 400;
+                font-size: 1.4rem;
+                color: $text;
+                height: 50px;
+                border-radius: 4px;
+                border: none;
+                
+                padding: 7px;
+                background-color: $primary;
+    
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+
+        .time_calc_result_box{
+            width: 80vh;
+            height: 30vh;
+            border: 1px solid $light_text;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            color: white;
+            font-size: 0.5rem;
+            padding: 1rem 2rem 1rem 2rem;
+
+            #time_calc_rez{
+                color: lightgray;
+            }
+        }
+
+    
+
+    }
+
+    footer{
+        margin-bottom: 2rem;
+    }
+}
+
+
